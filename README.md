@@ -12,3 +12,7 @@ the source file folder
 >**echo: echo server using libevent**<br>
 >**epoll:simple example using epoll(7)**<br>
 >**block_http_client: simple blocking http client using socket**<br>
+>**method: Get methods event_base supported**<br>
+>**method2: Get backend method features**<br>
+>**test: Demo for basic operation of event and event_base**<br>
+>**alarm: signal event --SIGALRM--**<br>

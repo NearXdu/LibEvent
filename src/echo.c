@@ -17,9 +17,9 @@ void write_cb(struct bufferevent*bev,void *arg);
 int main(int argc,char **argv)
 {
     int ret;
-    evutil_socket_t listener;
-    listener=socket(AF_INET,SOCK_STREAM,0);
-    assert(listener>0);
+    evutil_socket_t listener;//fd
+    listener=socket(AF_INET,SOCK_STREAM,0);//创建描述符
+    assert(listener>0);//assert
 
     evutil_make_listen_socket_reuseable(listener);
 

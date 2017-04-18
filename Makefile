@@ -1,5 +1,12 @@
 PROGS=echo \
-      epoll
+      epoll \
+      block_http_client \
+      method \
+      method2 \
+      timer\
+      test \
+      alarm
+
 CLEANFILES = core core.* *.core *.o temp.* *.out typescript* \
 		*.lc *.lh *.bsdi *.sparc *.uw
 
@@ -25,6 +32,20 @@ echo:${SRC}/echo.o
 	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
 epoll:${SRC}/epoll.o
 	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
+block_http_client:${SRC}/block_http_client.o
+	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
+method:${SRC}/method.o
+	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
+method2:${SRC}/method2.o
+	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
+timer:${SRC}/timer.o
+	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
+test:${SRC}/test.o
+	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
+alarm:${SRC}/alarm.o
+	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
+
+
 
 
 
