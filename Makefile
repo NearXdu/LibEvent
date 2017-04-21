@@ -5,7 +5,9 @@ PROGS=echo \
       method2 \
       timer\
       test \
-      alarm
+      alarm \
+      active \
+      eventbuffer
 
 CLEANFILES = core core.* *.core *.o temp.* *.out typescript* \
 		*.lc *.lh *.bsdi *.sparc *.uw
@@ -44,6 +46,12 @@ test:${SRC}/test.o
 	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
 alarm:${SRC}/alarm.o
 	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
+active:${SRC}/active.o
+	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
+eventbuffer:${SRC}/eventbuffer.o
+	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
+
+
 
 
 

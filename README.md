@@ -16,3 +16,6 @@ the source file folder
 >**method2: Get backend method features**<br>
 >**test: Demo for basic operation of event and event_base**<br>
 >**alarm: signal event --SIGALRM--**<br>
+>**active: active an event using event_active**<br>
+>**timer: test for event_base_loopexit**<br>
+>**eventbuffer: simple http client using bufferevent**<br>
