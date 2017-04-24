@@ -19,3 +19,4 @@ the source file folder
 >**active: active an event using event_active**<br>
 >**timer: test for event_base_loopexit**<br>
 >**eventbuffer: simple http client using bufferevent**<br>
+>**eventbufferserver: simple http server using bufferevent**<br>

@@ -7,7 +7,8 @@ PROGS=echo \
       test \
       alarm \
       active \
-      eventbuffer
+      eventbuffer \
+      eventbufferserver
 
 CLEANFILES = core core.* *.core *.o temp.* *.out typescript* \
 		*.lc *.lh *.bsdi *.sparc *.uw
@@ -50,6 +51,9 @@ active:${SRC}/active.o
 	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
 eventbuffer:${SRC}/eventbuffer.o
 	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
+eventbufferserver:${SRC}/eventbufferserver.o
+	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
+
 
 
 
