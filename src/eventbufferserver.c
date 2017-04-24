@@ -26,6 +26,7 @@ void errorcb(struct bufferevent*bev,short events,void *ptr)
 	struct event_base *base=ptr;
 	printf("closing... \r\n");
 	bufferevent_free(bev);
+
 	event_base_loopexit(base,NULL);
     }
 }
