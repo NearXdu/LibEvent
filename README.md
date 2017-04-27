@@ -20,3 +20,4 @@ the source file folder
 >**timer: test for event_base_loopexit**<br>
 >**eventbuffer: simple http client using bufferevent**<br>
 >**eventbufferserver: simple http server using bufferevent**<br>
+>**watermark: simple test for bufferevent watermark**<br>

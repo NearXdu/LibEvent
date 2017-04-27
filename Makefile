@@ -8,7 +8,8 @@ PROGS=echo \
       alarm \
       active \
       eventbuffer \
-      eventbufferserver
+      eventbufferserver \
+      watermark
 
 CLEANFILES = core core.* *.core *.o temp.* *.out typescript* \
 		*.lc *.lh *.bsdi *.sparc *.uw
@@ -53,6 +54,9 @@ eventbuffer:${SRC}/eventbuffer.o
 	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
 eventbufferserver:${SRC}/eventbufferserver.o
 	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
+watermark:${SRC}/watermark.o
+	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
+
 
 
 

@@ -60,6 +60,7 @@ void readcb(struct bufferevent*bev,void *arg )
 	    write(1,request_buf,strlen(request_buf));
 	}
     }
+    //构造响应报文
     char content[]="<html><head><title>This is title</title></head><body><h1>Hello</h1></body></html>";
     char tmp[]="HTTP/1.1 200 OK\r\nServer: ZhangXiao\r\nContent-Length: %d\r\nContent-Type: text/html\r\n\r\n%s";
     int contentlen=strlen(content);
