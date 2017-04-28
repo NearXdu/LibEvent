@@ -9,7 +9,8 @@ PROGS=echo \
       active \
       eventbuffer \
       eventbufferserver \
-      watermark
+      watermark \
+      evbuffer
 
 CLEANFILES = core core.* *.core *.o temp.* *.out typescript* \
 		*.lc *.lh *.bsdi *.sparc *.uw
@@ -56,6 +57,10 @@ eventbufferserver:${SRC}/eventbufferserver.o
 	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
 watermark:${SRC}/watermark.o
 	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
+evbuffer:${SRC}/evbuffer.o
+	@${CC} ${CFLAGS}  -o ${OUTPUT}/$@   $^  ${LDFLAGS}
+
+
 
 
 
